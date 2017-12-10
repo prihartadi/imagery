@@ -2,9 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$navbar-default-bg: #FF6A00;
+$navbar-default-bg: rgb(0, 110, 255);
+$navbar-default-link-color: #fff;
 
 @import "bootstrap";
+
+.white_font {
+	color: rgb(150, 150, 150);
+	&:hover {
+		color: #fff;
+	  }
+}
 
 .center {
 	text-align: center;
