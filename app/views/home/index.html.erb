@@ -1,6 +1,11 @@
 <div class='jumbotron center'>
-    <h1>See images that you never seen before</h1>
-    <p>You will thank me later</p>
-    <%= link_to 'Sign in', new_user_session_path, class:'btn btn-primary'%>
-    <%= link_to 'Sign up', new_user_registration_path, class:'btn btn-success'%>
+    <h1>Welcome to iMagery</h1>
+    <h2>See images that you never seen before</h2>
+    <p>You will thank me later ;)</p>
+    <% if user_signed_in?%>
+        <p>Enjoy your time</p>
+    <% else %>
+        <%= link_to 'Sign in', new_user_session_path, class:'btn btn-primary'%>
+        <%= link_to 'Sign up', new_user_registration_path, class:'btn btn-success'%>
+    <% end %>
 </div>
